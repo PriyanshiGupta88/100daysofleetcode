@@ -13,15 +13,3 @@ class Solution:
         h = time[max(time)]
         
         return h[:2] + ":" + h[2:]
-"""
-class Solution:
-    def largestTimeFromDigits(self, A: List[int]) -> str:
-        hh = filter(lambda h: h <= (2,3), permutations(A, 2))
-        mm = filter(lambda m: m <= (5,9), permutations(A, 2))
-        tt = filter(lambda t: Counter(A) == reduce(add, map(Counter, t)), product(hh, mm))
-
-        try:
-            return ":".join(map(lambda t: ''.join(map(str, t)), max(tt)))
-        except:
-            return ""
-"""
