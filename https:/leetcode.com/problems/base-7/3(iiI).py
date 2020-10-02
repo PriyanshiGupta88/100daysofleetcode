@@ -9,4 +9,6 @@ if num == 0:    return "0"
         while num:
             s += str(num % 7)
             num //=7
+                
+                
         return s[::-1] if f == 1 else '-' + s[::-1]
