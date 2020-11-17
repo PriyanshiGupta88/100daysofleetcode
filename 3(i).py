@@ -10,4 +10,6 @@
                 l.append(True)
             else:
                 l.append(False)
+             
+             
         return l
