@@ -1,2 +1,2 @@
-a=int(input())
-print(a%2==0)
+b=int(input())
+print(b%2==0)
